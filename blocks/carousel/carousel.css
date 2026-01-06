@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .carousel .carousel-slides-container {
   position: relative;
 }
@@ -99,7 +100,6 @@
   z-index: 1;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .carousel .carousel-navigation-buttons button {
   position: relative;
   width: 44px;
@@ -150,4 +150,163 @@
   .carousel .carousel-slide .carousel-slide-content[data-align='justify'] {
     --slide-content-width: auto;
   }
+}
+
+
+.carousel.carousel6 {
+  position: relative;
+}
+
+/* 
+  Create a flex container for the block and nav buttons.
+  If the outer structure isn't flex, simulate side-by-side layout and alignment.
+*/
+.carousel.carousel6 .carousel-content,
+.carousel.carousel6 .carousel-slide,
+.carousel.carousel6 .carousel-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Navigation button container: overlay, block-centered, pointer events only on buttons */
+.carousel.carousel6 .carousel-navigation-buttons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 10;
+
+  /* Remove max-width so buttons can sit close to card regardless of card width */
+  padding: 0;
+  margin: 0;
+}
+
+/* Nav buttons: visually attached to card/block, not overlapping */
+.carousel.carousel6 .carousel-navigation-buttons button {
+  pointer-events: auto;
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  min-height: 42px;
+  border-radius: 50%;
+  background: #a50000;
+  border: none;
+  box-shadow: 0 2px 8px 0 rgb(165 0 0 / 10%);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: filter 0.18s, box-shadow 0.18s;
+  outline: none;
+}
+
+/* Buttons hug card edge, but don't overlap (simulate card margin with negative margin) */
+.carousel.carousel6 .carousel-navigation-buttons button.slide-prev {
+  margin-left: calc(50vw - 50% - 220px); /* '220px' is half expected card width: adjust as needed */
+  margin-right: 16px;
+}
+
+.carousel.carousel6 .carousel-navigation-buttons button.slide-next {
+  margin-right: calc(50vw - 50% - 220px);
+  margin-left: 16px;
+}
+
+/* Responsive fix for smaller screens */
+@media (width <= 600px) {
+  .carousel.carousel6 .carousel-navigation-buttons button.slide-prev,
+  .carousel.carousel6 .carousel-navigation-buttons button.slide-next {
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+}
+
+/* Button hover/focus/active */
+.carousel.carousel6 .carousel-navigation-buttons button:focus-visible,
+.carousel.carousel6 .carousel-navigation-buttons button:hover {
+  filter: brightness(1.10);
+  box-shadow: 0 2px 12px 0 rgb(165 0 0 / 22%);
+}
+
+.carousel.carousel6 .carousel-navigation-buttons button:active {
+  filter: brightness(0.94);
+}
+
+.carousel.carousel6 .carousel-navigation-buttons button::before {
+  display: none;
+}
+
+.carousel.carousel6 .carousel-navigation-buttons button.slide-prev svg,
+.carousel.carousel6 .carousel-navigation-buttons button.slide-next svg {
+  display: none;
+}
+
+.carousel.carousel6 .carousel-navigation-buttons button.slide-prev::after,
+.carousel.carousel6 .carousel-navigation-buttons button.slide-next::after {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid white;
+  border-width: 0 0.28em 0.28em 0;
+  border-radius: 0;
+}
+
+.carousel.carousel6 .carousel-navigation-buttons button.slide-prev::after {
+  transform: rotate(135deg);
+}
+
+.carousel.carousel6 .carousel-navigation-buttons button.slide-next::after {
+  transform: rotate(-45deg);
+}
+
+/* Card: ensure has enough side padding so buttons never overlap content */
+.carousel.carousel6 .carousel-card,
+.carousel.carousel6 .carousel-slide {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* Indicators, if present: center under block and increase gap for airy look */
+.carousel.carousel6 .carousel-slide-indicators {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 22px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  z-index: 3;
+}
+
+.carousel.carousel6 .carousel-slide-indicator button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid #a50000;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  transition: background 0.18s, border-color 0.18s;
+  cursor: pointer;
+  outline: none;
+}
+
+.carousel.carousel6 .carousel-slide-indicator button:disabled,
+.carousel.carousel6 .carousel-slide-indicator button[aria-current="true"] {
+  background: #a50000;
+  border: none;
+  cursor: default;
+}
+
+.carousel.carousel6 .carousel-slide-indicator button:focus-visible {
+  box-shadow: 0 0 0 2px #a5000055;
 }
