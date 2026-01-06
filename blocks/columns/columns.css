@@ -819,7 +819,6 @@
   padding-bottom: 56px;
 }
 
-/* Root row: use grid for robust multi-column layout & alignment */
 .columns.columns10 .columns-wrapper .columns-3-cols {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -830,7 +829,6 @@
   box-sizing: border-box;
 }
 
-/* Stack vertically on small screens */
 @media (width <= 900px) {
   .columns.columns10 .columns-wrapper .columns-3-cols {
     grid-template-columns: 1fr;
@@ -839,7 +837,6 @@
   }
 }
 
-/* Each column: left-aligned, visually distinct, with max readable width */
 .columns.columns10 .columns-wrapper .columns-3-cols div {
   display: flex;
   flex-direction: column;
@@ -850,7 +847,6 @@
   padding: 0 12px;
 }
 
-/* Icon/blob/title area */
 .columns.columns10 .columns-wrapper .columns-3-cols div p:first-child {
   position: relative;
   margin: 0 0 24px;
@@ -863,7 +859,6 @@
   justify-content: flex-start;
 }
 
-/* Center blob+icon horizontally within the p, but text remains left-aligned */
 .columns.columns10 .columns-wrapper .columns-3-cols div p:first-child img,
 .columns.columns10 .columns-wrapper .columns-3-cols div p:first-child picture {
   position: relative;
@@ -875,9 +870,6 @@
   margin-right: 0;
 }
 
-/* Blob: colored shape behind icon */
-
-/* (no content property, just shape & color) */
 .columns.columns10 .columns-wrapper .columns-3-cols div p:first-child::before {
   position: absolute;
   top: 10px;
@@ -890,17 +882,14 @@
   background: #EAF985;
 }
 
-/* Center column blob color */
 .columns.columns10 .columns-wrapper .columns-3-cols div:nth-child(2) p:first-child::before {
   background: #C9FFF6;
 }
 
-/* Third column blob color if needed */
 .columns.columns10 .columns-wrapper .columns-3-cols div:nth-child(3) p:first-child::before {
   background: #EAF985;
 }
 
-/* Title styling (strong inside first p) */
 .columns.columns10 .columns-wrapper .columns-3-cols div p:first-child strong {
   display: block;
   font-size: 18px;
@@ -913,7 +902,6 @@
   letter-spacing: 0.01em;
 }
 
-/* Paragraph text (all p except first) */
 .columns.columns10 .columns-wrapper .columns-3-cols div p:not(:first-child) {
   color: #222;
   font-size: 16px;
@@ -925,9 +913,59 @@
   max-width: 370px;
 }
 
-/* Slightly increase space between columns on wide screens for airy feel */
 @media (width >= 1200px) {
   .columns.columns10 .columns-wrapper .columns-3-cols {
     gap: 56px;
   }
+}
+
+
+.columns-2-cols > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;   /* Center the two columns as a pair */
+  align-items: flex-start;
+  gap: 84px;                 /* moderate spacing */
+  background: #fcfcfc;
+  padding: 48px 0;
+}
+
+/* Each "certification" block is a vertical stack */
+.columns-2-cols > div > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 160px;
+  padding-top: 100px; /* reserve space for blob */
+}
+
+/* Blob background as pseudo-element */
+.columns-2-cols > div > div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 44% 56% 60% 40% / 50% 60% 40% 50%;
+  background: #C8FAEA;
+  z-index: 0;
+}
+
+/* Second block uses a different blob color */
+.columns-2-cols > div > div:nth-child(2)::before {
+  background: #F4FFCB;
+}
+
+/* Text styling */
+.columns-2-cols > div > div p {
+  font-weight: bold;
+  color: #000;
+  font-size: 18px;
+  margin-top: 16px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
