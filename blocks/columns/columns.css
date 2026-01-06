@@ -208,10 +208,6 @@
   }
 }
 
-
-/* Orange block visual and layout refinement for .columns.columns3 */
-
-/* Outer wrapper for orange block */
 .columns.columns3 {
   background: #FF9100;
   border-bottom-right-radius: 48px;
@@ -220,7 +216,6 @@
   padding: 0;
 }
 
-/* Two-column layout for the main block content */
 .columns.columns3 .block.columns-2-cols {
   display: flex;
   flex-direction: row;
@@ -241,7 +236,6 @@
   }
 }
 
-/* Text column */
 .columns.columns3 .block.columns-2-cols .columns-text,
 .columns.columns3 .block.columns-2-cols div:first-child {
   display: flex;
@@ -290,7 +284,6 @@
   padding: 0;
 }
 
-/* Image/deco column */
 .columns.columns3 .block.columns-2-cols .columns-img,
 .columns.columns3 .block.columns-2-cols div:last-child {
   display: flex;
@@ -312,7 +305,6 @@
   }
 }
 
-/* Main image wrapper (usually a picture or div) */
 .columns.columns3 .block.columns-2-cols .columns-img picture,
 .columns.columns3 .block.columns-2-cols div:last-child picture {
   display: block;
@@ -332,7 +324,6 @@
   }
 }
 
-/* Main image styling */
 .columns.columns3 .block.columns-2-cols .columns-img picture img,
 .columns.columns3 .block.columns-2-cols div:last-child picture img {
   display: block;
@@ -347,7 +338,6 @@
   position: relative;
 }
 
-/* Burst effect behind image (use .burst or similar class on a markup element) */
 .columns.columns3 .block.columns-2-cols .columns-img picture .burst,
 .columns.columns3 .block.columns-2-cols div:last-child picture .burst {
   position: absolute;
@@ -361,7 +351,6 @@
   pointer-events: none;
 }
 
-/* Play button overlay (use .play-btn or similar class on a markup element) */
 .columns.columns3 .block.columns-2-cols .columns-img picture .play-btn,
 .columns.columns3 .block.columns-2-cols div:last-child picture .play-btn {
   position: absolute;
@@ -379,7 +368,6 @@
   justify-content: center;
 }
 
-/* Decorative hearts overlay (use .hearts or similar class on a markup element) */
 .columns.columns3 .block.columns-2-cols .columns-img picture .hearts,
 .columns.columns3 .block.columns-2-cols div:last-child picture .hearts {
   position: absolute;
@@ -391,7 +379,6 @@
   z-index: 4;
 }
 
-/* Decorative wavy white border at bottom */
 .columns.columns3::after {
   display: block;
   width: 100%;
@@ -405,7 +392,6 @@
   content: "";
 }
 
-/* Responsive adjustments for stacking columns and image sizing */
 @media (width <= 900px) {
   .columns.columns3 .block.columns-2-cols .columns-img picture,
   .columns.columns3 .block.columns-2-cols div:last-child picture {
@@ -433,4 +419,110 @@
   }
 }
 
-/* Remove extra bottom margin from block if present */
+
+.columns.columns4 {
+  background: #ff8500;
+  padding: 0;
+  margin: 0;
+}
+
+.columns.columns4 .columns {
+  padding: 0;
+  margin: 0;
+}
+
+/* Root: Arrange top-level columns in a row, tightly grouped left */
+.columns.columns4 .columns div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  /* Tightly group everything left, minimal horizontal padding */
+  padding: 40px 24px;
+  box-sizing: border-box;
+  width: 100%;
+  gap: 0;
+}
+
+/* Logo block on left (first descendant div): vertically stacked, tight to first column */
+.columns.columns4 .columns div div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 10px;
+  margin-right: 32px; /* Tight, but visible, to first link column */
+  min-width: 120px;
+  max-width: 220px;
+  box-sizing: border-box;
+}
+
+/* Each link column: vertical stack, compact, equal width for visual grid effect */
+.columns.columns4 .columns div div:not(:first-child) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 120px;
+  max-width: 180px;
+  padding-left: 18px;
+  padding-right: 18px;
+  box-sizing: border-box;
+
+  /* Remove any default background/borders */
+  background: none;
+  border: none;
+}
+
+/* List & link styles: left aligned, no bullets, use inherited fonts */
+.columns.columns4 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.columns.columns4 li {
+  margin: 0 0 8px;
+  padding: 0;
+}
+
+.columns.columns4 li:last-child {
+  margin-bottom: 0;
+}
+
+/* Links: black, no underline, use default font */
+.columns.columns4 a {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 1.5;
+  transition: color 0.2s;
+}
+
+.columns.columns4 a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: stack columns, remove dividers, adjust spacing */
+@media (width <= 900px) {
+  .columns.columns4 .columns div {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 24px 12px;
+  }
+
+  .columns.columns4 .columns div div {
+    min-width: 0;
+    max-width: none;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .columns.columns4 .columns div div:last-child {
+    margin-bottom: 0;
+  }
+}
