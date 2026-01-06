@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -31,3 +32,197 @@
     order: unset;
   }
 }
+
+
+/* Responsive 2-column layout for .columns block */
+.columns .block.columns-2-cols {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  width: 100%;
+  padding: 56px 0;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+/* Stack columns vertically on small screens */
+@media (width <= 900px) {
+  .columns .block.columns-2-cols {
+    flex-direction: column;
+    gap: 0;
+    padding: 32px 0;
+  }
+}
+
+/* Left column: constrain width, center vertically, spacing */
+.columns .block.columns-2-cols div {
+  box-sizing: border-box;
+}
+
+/* Target left column for text containment and vertical centering */
+.columns .block.columns-2-cols div:first-child {
+  max-width: 480px;
+  width: 100%;
+  padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media (width <= 900px) {
+  .columns .block.columns-2-cols div:first-child {
+    max-width: 100%;
+    padding-right: 0;
+    padding-bottom: 24px;
+    align-items: stretch;
+  }
+}
+
+/* Left column text spacing and simple divider between items */
+.columns .block.columns-2-cols div:first-child p {
+  color: var(--dark-color);
+  font-size: var(--body-font-size-m);
+  margin-bottom: 16px;
+  line-height: 1.6;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 10px;
+}
+
+.columns .block.columns-2-cols div:first-child p:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* Headings in left column */
+.columns .block.columns-2-cols div:first-child h1,
+.columns .block.columns-2-cols div:first-child h2,
+.columns .block.columns-2-cols div:first-child h3 {
+  color: var(--text-color);
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 0.01em;
+  line-height: 1.18;
+}
+
+/* Action buttons in left column: more specific to override defaults */
+.columns .block.columns-2-cols div:first-child a.button,
+.columns .block.columns-2-cols div:first-child .button {
+  background-color: #e5d9fa;
+  color: var(--text-color);
+  border-radius: 2em;
+  padding: 0.55em 1.4em;
+  font-weight: 500;
+  font-size: var(--body-font-size-s);
+  margin-right: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 12px rgb(60 60 80 / 3%);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  transition: background .2s;
+}
+
+.columns .block.columns-2-cols div:first-child a.button:hover,
+.columns .block.columns-2-cols div:first-child .button:hover,
+.columns .block.columns-2-cols div:first-child a.button:focus,
+.columns .block.columns-2-cols div:first-child .button:focus {
+  background-color: #d1c0f4;
+  cursor: pointer;
+}
+
+/* Right column: image + overlay, center content vertically */
+.columns .block.columns-2-cols div:last-child {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 360px;
+  padding-left: 32px;
+  width: 100%;
+  background:
+    radial-gradient(ellipse 61% 47% at 54% 57%, #e5d9fa 88%, transparent 100%);
+}
+
+/* Responsive right column padding for mobile */
+@media (width <= 900px) {
+  .columns .block.columns-2-cols div:last-child {
+    min-height: 0;
+    padding-left: 0;
+  }
+}
+
+/* Decorative soft purple blob behind image via background gradient */
+
+/* Main product image: above blob, rounded, shadow */
+.columns .block.columns-2-cols div:last-child img {
+  position: relative;
+  z-index: 2;
+  display: block;
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 18px;
+  box-shadow: 0 6px 36px rgb(100 64 256 / 12%);
+}
+
+/* Responsive image sizing */
+@media (width <= 900px) {
+  .columns .block.columns-2-cols div:last-child img {
+    max-width: 180px;
+  }
+}
+
+/* Play icon: small overlay, lower-right corner of image (adjacent img) */
+.columns .block.columns-2-cols div:last-child img + img,
+.columns .block.columns-2-cols div:last-child picture + img {
+  position: absolute;
+  right: 32px;
+  bottom: 32px;
+  width: 52px;
+  height: 52px;
+  z-index: 3;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 16px rgb(100 64 256 / 13%);
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+/* Responsive play icon sizing */
+@media (width <= 900px) {
+  .columns .block.columns-2-cols div:last-child img + img,
+  .columns .block.columns-2-cols div:last-child picture + img {
+    right: 12px;
+    bottom: 12px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Any text below image in right column, e.g. bold label/CTA */
+.columns .block.columns-2-cols div:last-child p:not(:has(img)) {
+  margin-top: 22px;
+  font-size: var(--heading-font-size-l);
+  color: var(--text-color);
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+}
+
+@media (width <= 900px) {
+  .columns .block.columns-2-cols div:last-child p:not(:has(img)) {
+    font-size: var(--body-font-size-m);
+    margin-top: 12px;
+  }
+}
+
+/* Remove excess space below columns block */
