@@ -1,0 +1,634 @@
+{
+  "originUrl": "https://sunfeastyippee.com",
+  "aborted": false,
+  "lastCrawled": "https://sunfeastyippee.com/",
+  "urls": [
+    {
+      "url": "https://sunfeastyippee.com/our-story.html",
+      "source": "SITEMAPS",
+      "targetPath": "/our-story",
+      "id": "ee65ee50c4de08bc2abeb0ba42726dd92108205c"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing",
+      "id": "d56599caf40e055ffeeb2a899f23fbc342407c02"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/burger-with-yippee-buns.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/burger-with-yippee-buns",
+      "id": "8125fe8c0d26e41b077a14f1012515fed8e26fe9"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-alfredo-sauce-recipe.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-alfredo-sauce-recipe",
+      "id": "52896c05c0667467de351b411ac44267cf428ba8"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-aloo-cheese-toast-sandwich.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-aloo-cheese-toast-sandwich",
+      "id": "b202a960d2c062002b5ea419aaf67abfa217810f"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-bombay-style-frankie.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-bombay-style-frankie",
+      "id": "22f517b99cbfc3d42065f3ec696e6c449906d238"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-bowl-pizza.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-bowl-pizza",
+      "id": "e0a13a350f89d323ecd071fdddb93f26586b0083"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-bruschetta-bites.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-bruschetta-bites",
+      "id": "b70661b5e4c453ef56d060585fd9ee2bda9a5c8c"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-burnt-garlic-egg.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-burnt-garlic-egg",
+      "id": "e1d6b932dc0429f27f554a5ab183ecd311f92318"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-burritos.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-burritos",
+      "id": "1b2d770c783f5d560f1b87c50325b2f763d010a9"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-butter-fried-noodles.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-butter-fried-noodles",
+      "id": "4df066a62bbb679721eb2be7794820beb9970238"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-butter-popcorn.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-butter-popcorn",
+      "id": "5da64a05a475aeda5cc0953369c982a70d469d47"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-cabbage-noodles-bites.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-cabbage-noodles-bites",
+      "id": "a49f7f54369eaa615f1d06018d6ca8f3ce527c9b"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-chatpata-bhel.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-chatpata-bhel",
+      "id": "5a919117da8135973905750594d435f2d9cfb8f6"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-cheese-chilli-toast.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-cheese-chilli-toast",
+      "id": "850accf04b26bed1573d4e9205dbe5d9ebb2c436"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-cheese-garlic-bread.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-cheese-garlic-bread",
+      "id": "682d722c42de8f380b69d2ed529cfef278e29f73"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-cheese-roti-roll.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-cheese-roti-roll",
+      "id": "94c2d35c25960cccc2546c8ac561a0009a808c70"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-cheesy-cheesy-noodles.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-cheesy-cheesy-noodles",
+      "id": "a83ecdd2775c0755e58eddb54220e62bafbbbde9"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-cheesy-cuppa-noodles.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-cheesy-cuppa-noodles",
+      "id": "29291d18ee3ba75ad2aecf6588ed63ef019e66a9"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-cheesy-stick.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-cheesy-stick",
+      "id": "0fc05483d29607072d781ab505fcb2db1b6a6571"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-chilli-cheese.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-chilli-cheese",
+      "id": "743c6f1646b02f52ccb4a79052bf38078fb8ed62"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-chinese-noodles-soup.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-chinese-noodles-soup",
+      "id": "e0a9631f519f1df5c03464e7b15f40d4a8dfa9d1"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-coconut-noodles-curry.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-coconut-noodles-curry",
+      "id": "0ea43e673d8fdfc3f0664f5b40a4a71e8a0fdaf7"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-corn-dog.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-corn-dog",
+      "id": "a9a28aadd970581bc0c85e2f80c15e428cdc9c00"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-cracker-biscuit.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-cracker-biscuit",
+      "id": "83f8618920c36e0743afde71229ecffb65731a7a"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-creamy-mayo.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-creamy-mayo",
+      "id": "8ad576ba934a4f6e23dc216ac6e9fe68bafec58e"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-crepe-roll.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-crepe-roll",
+      "id": "118288d5cb91f538366982243ee649d14be0f3a8"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-crispy-rings.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-crispy-rings",
+      "id": "93d335c5ddbd0cb1018e91021a349369ca02870d"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-egg-noodles-roll.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-egg-noodles-roll",
+      "id": "730aad73fbdfa7c9e113099fa6c370ded79985b8"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-egg-roll.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-egg-roll",
+      "id": "94c7dfc45022f64d03dd8c8756587ad49eccbfdf"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-egg-shakshouka.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-egg-shakshouka",
+      "id": "58a36bd1d5679bff5cf4b178fe0d99e842d11100"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-falafel.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-falafel",
+      "id": "8f90bf425f63f2e04a6f86c39eb58cdb4d1e41b6"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-finger-fries.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-finger-fries",
+      "id": "7b06cd80ba4ba79dddccda52f0293ab7a5f747e7"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-hot-and-sweet.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-hot-and-sweet",
+      "id": "63f60549aa453c51078458ae7133b42e61356a10"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-hot-dog.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-hot-dog",
+      "id": "bd812c39c81566247986ab227b2b801757fc37d7"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-indian-chowmein.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-indian-chowmein",
+      "id": "6aa4be14913dcada0599435ae99fccf2c0c48e61"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-inside-out-pie.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-inside-out-pie",
+      "id": "f0832d0fb1fb3a0d455e1acda0fd254641fb950c"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-kachori.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-kachori",
+      "id": "f5b910b0523146f1075f83761ff97544670f3c92"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-koliwada.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-koliwada",
+      "id": "6e28ba7a945feb5e7864c72ff5acf03f1bb0608b"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-lasagna.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-lasagna",
+      "id": "f217800ae91f4c49307c5285404f859eed4fffaa"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-makhani-noodles.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-makhani-noodles",
+      "id": "f9db7fa8ab6d87ca9e7243d2fa960d90d20f421e"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-methi-muthia.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-methi-muthia",
+      "id": "707bd731afcd22850962709f6c9b3b17cf126c9b"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-mood-masala-noodles-base-pizza.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-mood-masala-noodles-base-pizza",
+      "id": "73ce42e2f5420b38670d7ee6b7ac14e2eae80dd3"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-mughlai-paratha.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-mughlai-paratha",
+      "id": "b00d42110e7d696cd955ab346d6737db31c01c62"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-mushroom-noodles-chilla.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-mushroom-noodles-chilla",
+      "id": "e36207ac055dbf6790ea3c803086efbd0a74d630"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-mushroom-stir-fry.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-mushroom-stir-fry",
+      "id": "648b6d499f8d02e73c9c294e884ef347fbade695"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-noodle-cheese-bread-pakora.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-noodle-cheese-bread-pakora",
+      "id": "1c3621fab07d3fdb2fdd2c87cd4355d3dca3926f"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-noodle-garlic-bread-toast.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-noodle-garlic-bread-toast",
+      "id": "47101e1ed287b611667f0c17348ce78b89f216ba"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-noodle-lasagna.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-noodle-lasagna",
+      "id": "982b2935bbf0ef439653f90d64006a09194ea8f0"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-noodle-masala-maska-pav.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-noodle-masala-maska-pav",
+      "id": "7b60e1faa74cb6fd3fc1c3d2725fccb2ad621c81"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-noodles-carrot-hash-brown.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-noodles-carrot-hash-brown",
+      "id": "eaf01c3bb1cda1a942595d3260f1a4cc5b3c758e"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-noodles-chop.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-noodles-chop",
+      "id": "ef797ce563154bcdb4690f3ffb9eda1ed96dd4b5"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-noodles-egg-toast.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-noodles-egg-toast",
+      "id": "468dd75c4d7e7535b8f3e5e506de5a4cf49fc97a"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-noodles-in-tamrind-sauce.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-noodles-in-tamrind-sauce",
+      "id": "f2c75e951b1cbf779a5abee3dbadd5ba81b91bf7"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-noodles-on-toast.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-noodles-on-toast",
+      "id": "c7db555816f20bc4d0fa8e5bb906babbddcd8a8e"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-noodles-one-pot-meal.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-noodles-one-pot-meal",
+      "id": "602e705ef45e519467bdf74a5fe1dbad3bdb7b3e"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-noodles-paani-puri.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-noodles-paani-puri",
+      "id": "4d35e05e329411ecdf213a439df24ea9cf0207b6"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-noodles-pulao.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-noodles-pulao",
+      "id": "23f6534fb9b6a8e2798dfa85835a918a2aa52293"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-noodles-shawarma.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-noodles-shawarma",
+      "id": "37ab5b5cba94e4abcecfb5074bf9fc605e4e0584"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-noodles-slider.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-noodles-slider",
+      "id": "44f67aa9dd6c5614a1f4164b9f2fcc42f9f4fd3f"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-noodles-veggies-toasty.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-noodles-veggies-toasty",
+      "id": "26f25b5057ad7758dc3636c94e65eb869928862c"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-paani-puri-shots.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-paani-puri-shots",
+      "id": "ee5ea17f4287a12862efdc3faf4950a85c4936bc"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-paneer-achari.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-paneer-achari",
+      "id": "c0f290546af84c54f7bd4fa2ce8de18272a75996"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-paneer-bhurji-noodles.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-paneer-bhurji-noodles",
+      "id": "55d3b7309574317700e8aa83881cf2f54346d65c"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-paneer-noodles-paneer-fry.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-paneer-noodles-paneer-fry",
+      "id": "af29e7f895405038e711207d14935de6c7e1ce26"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-paneer-spindles.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-paneer-spindles",
+      "id": "4367b65a0ea0f45dee838a519638138d1b4ada15"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-pav-bhaji.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-pav-bhaji",
+      "id": "bdedc98264e0ce2a3d64152b630a97770881f7ea"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-peppy-stuffed-capsicum.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-peppy-stuffed-capsicum",
+      "id": "23f49f8b2373984d40a45164f92753a8d820f0fd"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-phodniche-noodles.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-phodniche-noodles",
+      "id": "6e3c73f882991c467a8119d08442c7ebfda0aea3"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-potato-atta-noodles-soup.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-potato-atta-noodles-soup",
+      "id": "85a9b9f7693133c5be56015b339ef3c5688ad4b5"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-pumpkin-noodles-fritters.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-pumpkin-noodles-fritters",
+      "id": "d324c6045ee9043df5ae1a75fcf903c69023102e"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-quesadilla.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-quesadilla",
+      "id": "ca648169f9e224aacc6a107a903b0f2971323ee6"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-quick-noodle-eggs-fry.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-quick-noodle-eggs-fry",
+      "id": "c87bc32eb8ba0f92c4372ec68c44f9dab523f7a3"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-quick-noodles-egg-cake.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-quick-noodles-egg-cake",
+      "id": "dacc3e620f663a41823f76e369e670539c419575"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-ragada-patties.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-ragada-patties",
+      "id": "d53101868a8802fc7a14a4c41c6379dc5a12e5a4"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-ravioli.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-ravioli",
+      "id": "d3a8acdf2e6ab911424bdde85bfd9d8afbe2b2ff"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-ring-samosas.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-ring-samosas",
+      "id": "eb57e5c4b0638acda1b8a349c733ae3cd47b4b2f"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-roti-cutlet.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-roti-cutlet",
+      "id": "4240ac1364dbb5fb74fdca49d4efd374a1686f78"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-samosa.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-samosa",
+      "id": "cc96895b1a71e83616e37c2564ee5eb300bd4f19"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-scotch-eggs.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-scotch-eggs",
+      "id": "b92a0fec5823653ef17447d9850c4192df29b034"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-scrambled-eggs.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-scrambled-eggs",
+      "id": "25481a2d174e769559ae80774beda06a516cea24"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-sizzler.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-sizzler",
+      "id": "6656195dd5788fb06d18e166b260c96ec0e81156"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-skewers.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-skewers",
+      "id": "7ac84c27842d596ff1467f6d54b22132959260bc"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-soupy.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-soupy",
+      "id": "59081cf476c73d5bbfc35e3183d644ced8f5bdf0"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-spicy-creamy-noodles-boat.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-spicy-creamy-noodles-boat",
+      "id": "92d3257c28c270bb9889c3a8c92d6a408238a02e"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-spicy-kanda-noodles.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-spicy-kanda-noodles",
+      "id": "932a2470e6f411425750baef0d9d498df63b6e61"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-spicy-pesto-noodles.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-spicy-pesto-noodles",
+      "id": "f9c905403d31f036b5ab530f0613124c35fea635"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-spinach-corn-atta-noodles.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-spinach-corn-atta-noodles",
+      "id": "8ed86ea67e8e1ad6aa4432307f399ad3bbdbef21"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-spring-roll.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-spring-roll",
+      "id": "bd6dae11e80e4930396752564af07a95e5fe6b7d"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-stuffed-bell-peppers.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-stuffed-bell-peppers",
+      "id": "18f0a6d8cd02773182e7d333628bdf2775ea1e31"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-stuffed-cheesy-bun.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-stuffed-cheesy-bun",
+      "id": "807719ebd74341f6a5d385d0c7337ea947a3d25e"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-stuffed-cups.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-stuffed-cups",
+      "id": "6594d1df23c1a1dd7807863cddfe13a9e1807907"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-stuffed-kulcha.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-stuffed-kulcha",
+      "id": "d2d3543574ef70d51f4f8805b8966778110a45ae"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-sushi-recipe.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-sushi-recipe",
+      "id": "75a3d42753e14e630ddf75be7f78aef29c1f962a"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-taco.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-taco",
+      "id": "f2439acdc2f181d3f1e43f9c7ba09fdc68589577"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-tasty-grilled-paneer.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-tasty-grilled-paneer",
+      "id": "8973f03ce38e9743daf49921c5b1c57e7c100c1c"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-ulta-fulta-grill.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-ulta-fulta-grill",
+      "id": "f0c27afb7e6070449d69c14487a6d00a48495402"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-uttapam.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-uttapam",
+      "id": "28b74a17416454df765b13df0e552044c2f096d3"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-vadapav.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-vadapav",
+      "id": "1b78fefce79b3dd900ffeaac284a93f83d26b97e"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-veg-lollipop.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-veg-lollipop",
+      "id": "2457a21c8538a95afbacf212843d3749815f0c2a"
+    },
+    {
+      "url": "https://sunfeastyippee.com/recipe-listing/yippee-zucchini-bites.html",
+      "source": "SITEMAPS",
+      "targetPath": "/recipe-listing/yippee-zucchini-bites",
+      "id": "c3e83ff43ad4d92d5e96394620fc73936559bfb9"
+    }
+  ],
+  "crawlOptions": {
+    "timeout": 10000,
+    "inclusionPatterns": [],
+    "exclusionPatterns": [],
+    "limit": 100,
+    "sameDomain": true,
+    "keepHash": false,
+    "strategy": "sitemaps",
+    "logger": {},
+    "strategiesAttempted": [
+      "SITEMAPS"
+    ]
+  },
+  "extractionErrors": [
+    {
+      "url": "https://sunfeastyippee.com/products.html",
+      "status": "301 Moved Permanently Redirect: https://sunfeastyippee.com/product-listing.html"
+    }
+  ],
+  "errorCountMessage": "{\"E_301\":1}",
+  "error": null
+}
