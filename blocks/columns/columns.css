@@ -523,7 +523,6 @@
   padding: 0;
 }
 
-/* Use CSS Grid for primary two-column layout (responsive) */
 .columns.columns7 .columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -540,7 +539,6 @@
   }
 }
 
-/* LEFT COLUMN: vertically center the stack inside column */
 .columns.columns7 .columns div {
   display: flex;
   flex-direction: column;
@@ -551,7 +549,6 @@
   padding: 0;
 }
 
-/* Badge styling (first <p>) */
 .columns.columns7 .columns div p:first-child {
   background: #FFE066;
   color: #222;
@@ -565,7 +562,6 @@
   letter-spacing: 0.01em;
 }
 
-/* Title styling */
 .columns.columns7 .columns div h1 {
   color: #222;
   font-weight: 700;
@@ -574,7 +570,6 @@
   margin: 0 0 20px; margin-bottom: 20px;
 }
 
-/* Meta row: arrange 2nd and 3rd <p> side by side */
 .columns.columns7 .columns div .meta-row {
   display: flex;
   flex-direction: row;
@@ -595,7 +590,6 @@
   gap: 7px;
 }
 
-/* Fallback for when .meta-row can't be added: use nth-child */
 .columns.columns7 .columns div p:nth-child(2),
 .columns.columns7 .columns div p:nth-child(3) {
   display: inline-flex;
@@ -612,7 +606,6 @@
   margin-right: 0;
 }
 
-/* Description */
 .columns.columns7 .columns div p:nth-child(4) {
   color: #666;
   font-size: 16px;
@@ -621,7 +614,6 @@
   max-width: 420px; margin-bottom: 28px;
 }
 
-/* Actions: horizontal, pill style */
 .columns.columns7 .columns div .actions-row {
   display: flex;
   flex-direction: row;
@@ -653,7 +645,6 @@
   box-shadow: 0 0 0 2px #ffe06655;
 }
 
-/* Fallback for actions without .actions-row (use nth-child) */
 .columns.columns7 .columns div p:nth-child(5),
 .columns.columns7 .columns div p:nth-child(6) {
   display: inline-flex;
@@ -682,14 +673,11 @@
   box-shadow: 0 0 0 2px #ffe06655;
 }
 
-/* Remove default paragraph spacing in block */
 .columns.columns7 .columns div p {
   margin: 0;
   padding: 0;
   border: none;
 }
-
-/* Group spacing for vertical rhythm */
 .columns.columns7 .columns div p:nth-child(2) + p:nth-child(3) { margin-bottom: 18px; }
 
 .columns.columns7 .columns div p:nth-child(5), 
@@ -704,7 +692,6 @@
   }
 }
 
-/* RIGHT COLUMN: sunburst, plate, play button, stars */
 .columns.columns7 .columns div:last-child {
   display: flex;
   flex-direction: column;
@@ -716,7 +703,6 @@
   padding: 0;
 }
 
-/* Sunburst background */
 .columns.columns7 .columns div:last-child picture {
   width: 320px;
   height: 320px;
@@ -737,7 +723,6 @@
   }
 }
 
-/* Plate image: circular, on sunburst */
 .columns.columns7 .columns div:last-child picture img {
   width: 220px;
   height: 220px;
@@ -757,7 +742,6 @@
   }
 }
 
-/* Play button overlay: next picture or img after plate image */
 .columns.columns7 .columns div:last-child picture + picture,
 .columns.columns7 .columns div:last-child picture + img {
   position: absolute;
@@ -784,7 +768,6 @@
   }
 }
 
-/* Decorative stars (img or svg with "star" in src/class) */
 .columns.columns7 .columns div:last-child img[src*="star"],
 .columns.columns7 .columns div:last-child svg.star {
   position: absolute;
@@ -802,7 +785,11 @@
 .columns.columns7 .columns div:last-child img[src*="star"]:nth-of-type(2) {
   top: 13%;
 }
-.columns.columns7 .columns div:last-child img[src*="star"]:nth-of-type(3) { left: 24%; bottom: 9%; }
+
+.columns.columns7 .columns div:last-child img[src*="star"]:nth-of-type(3) {
+  left: 24%;
+  bottom: 9%;
+}
 
 @media (width <= 900px) {
   .columns.columns7 .columns div:last-child {
@@ -810,7 +797,6 @@
   }
 }
 
-/* Responsive: stack columns on mobile */
 @media (width <= 900px) {
   .columns.columns7 .columns {
     grid-template-columns: 1fr;
@@ -824,5 +810,124 @@
 
   .columns.columns7 .columns div:last-child {
     align-items: center;
+  }
+}
+
+
+.columns.columns10 {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+/* Root row: use grid for robust multi-column layout & alignment */
+.columns.columns10 .columns-wrapper .columns-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  place-items: stretch start;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Stack vertically on small screens */
+@media (width <= 900px) {
+  .columns.columns10 .columns-wrapper .columns-3-cols {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-items: stretch;
+  }
+}
+
+/* Each column: left-aligned, visually distinct, with max readable width */
+.columns.columns10 .columns-wrapper .columns-3-cols div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 370px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 12px;
+}
+
+/* Icon/blob/title area */
+.columns.columns10 .columns-wrapper .columns-3-cols div p:first-child {
+  position: relative;
+  margin: 0 0 24px;
+  padding-top: 32px;
+  min-height: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Center blob+icon horizontally within the p, but text remains left-aligned */
+.columns.columns10 .columns-wrapper .columns-3-cols div p:first-child img,
+.columns.columns10 .columns-wrapper .columns-3-cols div p:first-child picture {
+  position: relative;
+  z-index: 2;
+  width: 62px;
+  height: 62px;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Blob: colored shape behind icon */
+
+/* (no content property, just shape & color) */
+.columns.columns10 .columns-wrapper .columns-3-cols div p:first-child::before {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 98px;
+  height: 82px;
+  z-index: 1;
+  border-radius: 54% 46% 48% 52% / 46% 52% 54% 48%;
+  opacity: 0.6;
+  background: #EAF985;
+}
+
+/* Center column blob color */
+.columns.columns10 .columns-wrapper .columns-3-cols div:nth-child(2) p:first-child::before {
+  background: #C9FFF6;
+}
+
+/* Third column blob color if needed */
+.columns.columns10 .columns-wrapper .columns-3-cols div:nth-child(3) p:first-child::before {
+  background: #EAF985;
+}
+
+/* Title styling (strong inside first p) */
+.columns.columns10 .columns-wrapper .columns-3-cols div p:first-child strong {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  margin-top: 14px;
+  margin-bottom: 10px;
+  text-align: left;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+}
+
+/* Paragraph text (all p except first) */
+.columns.columns10 .columns-wrapper .columns-3-cols div p:not(:first-child) {
+  color: #222;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+  max-width: 370px;
+}
+
+/* Slightly increase space between columns on wide screens for airy feel */
+@media (width >= 1200px) {
+  .columns.columns10 .columns-wrapper .columns-3-cols {
+    gap: 56px;
   }
 }
