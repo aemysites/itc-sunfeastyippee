@@ -25,3 +25,119 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+
+.cards.cards8 {
+  background-color: #F7F6F9;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Outer list: horizontal row, evenly distributed, edge-to-edge */
+.cards.cards8 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Individual card: vertical stack, contents centered horizontally */
+.cards.cards8 ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  min-width: 0;
+  flex: 1 1 0;
+}
+
+/* Card image: circular, centered, soft shadow */
+.cards.cards8 ul li .cards-card-image img {
+  display: block;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+  margin: 0 auto;
+  box-shadow: 0 4px 24px 0 rgb(0 0 0 / 8%);
+}
+
+/* Vertically center image if container exists */
+.cards.cards8 ul li .cards-card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Card label: single line, centered, spacing below image */
+.cards.cards8 ul li .cards-card-body {
+  margin-top: 12px;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+}
+
+/* Label text: dark, small, no decoration, font weight medium-bold */
+.cards.cards8 ul li .cards-card-body p,
+.cards.cards8 ul li .cards-card-body strong,
+.cards.cards8 ul li .cards-card-body a {
+  color: #231F20;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Responsive: stack on tablet and mobile */
+@media (width <= 900px) {
+  .cards.cards8 ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .cards.cards8 ul li {
+    flex: 1 1 40%;
+    max-width: 240px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (width <= 600px) {
+  .cards.cards8 ul {
+    flex-flow: column nowrap;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .cards.cards8 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .cards.cards8 ul li {
+    flex: 1 1 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
