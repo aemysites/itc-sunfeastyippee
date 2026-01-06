@@ -990,7 +990,6 @@
   }
 }
 
-/* LEFT COLUMN (text) */
 .columns.columns13 .block.columns-2-cols div:first-child {
   display: flex;
   flex-direction: column;
@@ -998,7 +997,6 @@
   gap: 22px;
 }
 
-/* Title */
 .columns.columns13 .block.columns-2-cols h1 {
   font-size: 2rem;
   font-weight: 700;
@@ -1006,7 +1004,6 @@
   margin-bottom: 0.5em;
 }
 
-/* Meta row */
 .columns.columns13 .block.columns-2-cols div:first-child p:nth-of-type(1),
 .columns.columns13 .block.columns-2-cols div:first-child p:nth-of-type(2) {
   display: inline-block;
@@ -1016,7 +1013,6 @@
   margin-right: 18px;
 }
 
-/* Description */
 .columns.columns13 .block.columns-2-cols div:first-child p:nth-of-type(3) {
   color: #333;
   font-size: 1.1rem;
@@ -1026,7 +1022,6 @@
   overflow: hidden;
 }
 
-/* Action buttons */
 .columns.columns13 .block.columns-2-cols div:first-child p:nth-of-type(4),
 .columns.columns13 .block.columns-2-cols div:first-child p:nth-of-type(5) {
   display: inline-block;
@@ -1050,8 +1045,7 @@
   border-color: #FFD600;
   color: #FFD600;
 }
- 
-/* RIGHT COLUMN (Image & decorations) */
+
 .columns.columns13 .block.columns-2-cols div:last-child {
   position: relative;
   display: flex;
@@ -1060,7 +1054,6 @@
   min-width: 280px;
 }
 
-/* Starburst behind the plate image */
 .columns.columns13 .block.columns-2-cols div:last-child::before {
   content: '';
   position: absolute;
@@ -1074,13 +1067,11 @@
   z-index: 1;
 }
 
-/* Plate image */
 .columns.columns13 .block.columns-2-cols div:last-child > div > p:nth-of-type(1) {
   position: relative;
   z-index: 2;
 }
 
-/* Play button overlay (centered over plate) */
 .columns.columns13 .block.columns-2-cols div:last-child > div > p:nth-of-type(2) {
   position: absolute;
   left: 50%;
@@ -1090,7 +1081,6 @@
   margin: 0;
 }
 
-/* Make sure images are responsive */
 .columns.columns13 .block.columns-2-cols img {
   max-width: 100%;
   height: auto;
@@ -1112,7 +1102,6 @@
   }
 }
 
-/* Decorative diamonds/stars could be done with more pseudo-elements */
 .columns.columns13 .block.columns-2-cols div:last-child > div::after {
   position: absolute;
   z-index: 2;
@@ -1130,7 +1119,6 @@
   pointer-events: none;
 }
 
-/* Remove border-bottom from all p tags in block (if present from other CSS) */
 .columns.columns13 .block.columns-2-cols p {
   border-bottom: none;
   padding-bottom: 0;
@@ -1146,3 +1134,230 @@
     gap: 18px;
   }
 }
+
+
+.columns.columns15 {
+  /* tighter vertical space, symmetrical padding */
+  padding: 32px 0;
+}
+
+.columns.columns15 .columns-2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 48px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+
+@media (width <= 900px) {
+  .columns.columns15 .columns-2-cols {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 0 8vw;
+  }
+}
+
+/* LEFT COLUMN LAYOUT */
+.columns.columns15 .columns-2-cols div:not(.columns-img-col) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 0;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Headline */
+.columns.columns15 .columns-2-cols h1 {
+  color: #222;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 0 0 18px;
+  line-height: 1.13;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+
+/* INFO ROW (first two p tags) */
+.columns.columns15 .columns-2-cols div:not(.columns-img-col) p:nth-of-type(1),
+.columns.columns15 .columns-2-cols div:not(.columns-img-col) p:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+  color: #666;
+  font-size: 1rem;
+  border-radius: 2em;
+  padding: 4px 14px;
+  margin: 0 14px 0 0;
+  line-height: 1.5;
+  text-align: left;
+  min-width: 0;
+  min-height: 0;
+}
+
+.columns.columns15 .columns-2-cols div:not(.columns-img-col) p:nth-of-type(2) {
+  margin-right: 0;
+}
+
+/* Group info row horizontally using a flex row on a parent wrapper if present, else simulate with margin */
+.columns.columns15 .columns-2-cols div:not(.columns-img-col) p:nth-of-type(1) + p:nth-of-type(2) {
+  margin-left: 0;
+}
+
+/* DESCRIPTION (third p tag) */
+.columns.columns15 .columns-2-cols div:not(.columns-img-col) p:nth-of-type(3) {
+  color: #444;
+  font-size: 1.08rem;
+  margin: 16px 0 0;
+  max-width: 420px;
+  line-height: 1.7;
+  text-align: left;
+  padding: 0;
+}
+
+/* ACTIONS ROW (last two p tags horizontal row) */
+.columns.columns15 .columns-2-cols div:not(.columns-img-col) .columns-actions-row {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-top: 28px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.columns.columns15 .columns-2-cols div:not(.columns-img-col) p:nth-last-child(2),
+.columns.columns15 .columns-2-cols div:not(.columns-img-col) p:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #888;
+  text-transform: uppercase;
+  font-size: 0.92rem;
+  letter-spacing: 0.05em;
+  margin: 0 28px 0 0;
+  line-height: 1.3;
+  text-align: center;
+  row-gap: 8px;
+  background: none;
+  padding: 0;
+  min-width: 72px;
+}
+
+.columns.columns15 .columns-2-cols div:not(.columns-img-col) p:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+/* If no .columns-actions-row in HTML, group last two p's in a flex row via direct container */
+
+.columns.columns15 .columns-2-cols div:not(.columns-img-col) p:nth-last-child(2) {
+  margin-top: 24px;
+}
+
+/* RIGHT COLUMN: IMAGE & BURST */
+.columns.columns15 .columns-img-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.columns.columns15 .columns-img-col p {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  height: fit-content;
+}
+
+/* BURST EFFECT */
+.columns.columns15 .columns-img-col p::before {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 290px;
+  height: 290px;
+  background: radial-gradient(circle at 50% 50%, #FFD600 68%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* MAIN IMAGE */
+.columns.columns15 .columns-img-col picture:first-of-type img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  background: transparent;
+  margin: 0 auto;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* PLAY BUTTON OVERLAY */
+.columns.columns15 .columns-img-col picture + picture img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 54px;
+  height: 54px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 9%);
+  padding: 0;
+  object-fit: contain;
+}
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (width <= 900px) {
+  .columns.columns15 .columns-2-cols {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 0 8vw;
+  }
+
+  .columns.columns15 .columns-img-col p,
+  .columns.columns15 .columns-img-col picture:first-of-type img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .columns.columns15 .columns-img-col p::before {
+    width: 170px;
+    height: 170px;
+  }
+
+  .columns.columns15 .columns-img-col picture + picture img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Reduce default p tag margins in this block for tighter grouping */
+.columns.columns15 p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Remove bottom margin from last child to keep block tight */
