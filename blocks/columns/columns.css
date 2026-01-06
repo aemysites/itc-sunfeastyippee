@@ -431,34 +431,29 @@
   margin: 0;
 }
 
-/* Root: Arrange top-level columns in a row, tightly grouped left */
 .columns.columns4 .columns div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-
-  /* Tightly group everything left, minimal horizontal padding */
   padding: 40px 24px;
   box-sizing: border-box;
   width: 100%;
   gap: 0;
 }
 
-/* Logo block on left (first descendant div): vertically stacked, tight to first column */
 .columns.columns4 .columns div div:first-child {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   row-gap: 10px;
-  margin-right: 32px; /* Tight, but visible, to first link column */
+  margin-right: 32px;
   min-width: 120px;
   max-width: 220px;
   box-sizing: border-box;
 }
 
-/* Each link column: vertical stack, compact, equal width for visual grid effect */
 .columns.columns4 .columns div div:not(:first-child) {
   display: flex;
   flex-direction: column;
@@ -468,13 +463,10 @@
   padding-left: 18px;
   padding-right: 18px;
   box-sizing: border-box;
-
-  /* Remove any default background/borders */
   background: none;
   border: none;
 }
 
-/* List & link styles: left aligned, no bullets, use inherited fonts */
 .columns.columns4 ul {
   list-style: none;
   margin: 0;
@@ -491,7 +483,6 @@
   margin-bottom: 0;
 }
 
-/* Links: black, no underline, use default font */
 .columns.columns4 a {
   color: #000;
   font-size: 16px;
@@ -505,7 +496,6 @@
   text-decoration: underline;
 }
 
-/* Responsive: stack columns, remove dividers, adjust spacing */
 @media (width <= 900px) {
   .columns.columns4 .columns div {
     flex-direction: column;
@@ -524,5 +514,315 @@
 
   .columns.columns4 .columns div div:last-child {
     margin-bottom: 0;
+  }
+}
+
+
+.columns.columns7 {
+  background: #fff;
+  padding: 0;
+}
+
+/* Use CSS Grid for primary two-column layout (responsive) */
+.columns.columns7 .columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+  padding: 56px 0;
+}
+
+@media (width <= 900px) {
+  .columns.columns7 .columns {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 0;
+  }
+}
+
+/* LEFT COLUMN: vertically center the stack inside column */
+.columns.columns7 .columns div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 0;
+  width: 100%;
+  padding: 0;
+}
+
+/* Badge styling (first <p>) */
+.columns.columns7 .columns div p:first-child {
+  background: #FFE066;
+  color: #222;
+  border-radius: 18px;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 3px 16px; margin-bottom: 16px;
+  margin-top: 0;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+
+/* Title styling */
+.columns.columns7 .columns div h1 {
+  color: #222;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.1;
+  margin: 0 0 20px; margin-bottom: 20px;
+}
+
+/* Meta row: arrange 2nd and 3rd <p> side by side */
+.columns.columns7 .columns div .meta-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  margin: 0 0 18px;
+  width: 100%;
+}
+
+.columns.columns7 .columns div .meta-row p {
+  display: flex;
+  align-items: center;
+  color: #888;
+  font-size: 15px;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  gap: 7px;
+}
+
+/* Fallback for when .meta-row can't be added: use nth-child */
+.columns.columns7 .columns div p:nth-child(2),
+.columns.columns7 .columns div p:nth-child(3) {
+  display: inline-flex;
+  align-items: center;
+  color: #888;
+  font-size: 15px;
+  line-height: 1.3;
+  margin-right: 28px; margin-bottom: 0;
+  margin-top: 0;
+  gap: 7px;
+}
+
+.columns.columns7 .columns div p:nth-child(3) {
+  margin-right: 0;
+}
+
+/* Description */
+.columns.columns7 .columns div p:nth-child(4) {
+  color: #666;
+  font-size: 16px;
+  margin: 0 0 28px;
+  line-height: 1.5;
+  max-width: 420px; margin-bottom: 28px;
+}
+
+/* Actions: horizontal, pill style */
+.columns.columns7 .columns div .actions-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  width: 100%;
+}
+
+.columns.columns7 .columns div .actions-row p {
+  display: inline-flex;
+  align-items: center;
+  border: 1.5px solid #FFD600;
+  border-radius: 20px;
+  background: #fffde9;
+  color: #222;
+  font-weight: 500;
+  font-size: 13.5px;
+  padding: 9px 20px;
+  margin: 0;
+  gap: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.18s;
+  box-shadow: none;
+  line-height: 1.3;
+}
+
+.columns.columns7 .columns div .actions-row p:hover {
+  box-shadow: 0 0 0 2px #ffe06655;
+}
+
+/* Fallback for actions without .actions-row (use nth-child) */
+.columns.columns7 .columns div p:nth-child(5),
+.columns.columns7 .columns div p:nth-child(6) {
+  display: inline-flex;
+  align-items: center;
+  border: 1.5px solid #FFD600;
+  border-radius: 20px;
+  background: #fffde9;
+  color: #222;
+  font-weight: 500;
+  font-size: 13.5px;
+  padding: 9px 20px;
+  margin: 0 16px 0 0;
+  gap: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.18s;
+  box-shadow: none;
+  line-height: 1.3;
+}
+
+.columns.columns7 .columns div p:nth-child(6) {
+  margin-right: 0;
+}
+
+.columns.columns7 .columns div p:nth-child(5):hover,
+.columns.columns7 .columns div p:nth-child(6):hover {
+  box-shadow: 0 0 0 2px #ffe06655;
+}
+
+/* Remove default paragraph spacing in block */
+.columns.columns7 .columns div p {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Group spacing for vertical rhythm */
+.columns.columns7 .columns div p:nth-child(2) + p:nth-child(3) { margin-bottom: 18px; }
+
+.columns.columns7 .columns div p:nth-child(5), 
+.columns.columns7 .columns div p:nth-child(6) { margin-bottom: 0; }
+
+@media (width <= 600px) {
+  .columns.columns7 .columns div p:nth-child(5),
+  .columns.columns7 .columns div p:nth-child(6) {
+    min-width: 0;
+    padding: 6px 9px;
+    font-size: 12px;
+  }
+}
+
+/* RIGHT COLUMN: sunburst, plate, play button, stars */
+.columns.columns7 .columns div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+
+/* Sunburst background */
+.columns.columns7 .columns div:last-child picture {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: repeating-conic-gradient(from 0deg, #FFD600 0deg 20deg, #FFF 20deg 30deg);
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+@media (width <= 600px) {
+  .columns.columns7 .columns div:last-child picture {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Plate image: circular, on sunburst */
+.columns.columns7 .columns div:last-child picture img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 24px 0 rgb(255 214 0 / 16%),
+              0 2px 12px rgb(34 34 34 / 7%);
+  position: relative;
+  z-index: 2;
+  background: #fff;
+}
+
+@media (width <= 600px) {
+  .columns.columns7 .columns div:last-child picture img {
+    width: 135px;
+    height: 135px;
+  }
+}
+
+/* Play button overlay: next picture or img after plate image */
+.columns.columns7 .columns div:last-child picture + picture,
+.columns.columns7 .columns div:last-child picture + img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  width: 54px;
+  height: 54px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px #ffd60055;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+@media (width <= 600px) {
+  .columns.columns7 .columns div:last-child picture + picture,
+  .columns.columns7 .columns div:last-child picture + img {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+/* Decorative stars (img or svg with "star" in src/class) */
+.columns.columns7 .columns div:last-child img[src*="star"],
+.columns.columns7 .columns div:last-child svg.star {
+  position: absolute;
+  z-index: 4;
+  width: 28px;
+  height: 28px;
+  pointer-events: none;
+}
+
+.columns.columns7 .columns div:last-child img[src*="star"]:nth-of-type(1) {
+  left: 24%;
+  bottom: 9%;
+}
+
+.columns.columns7 .columns div:last-child img[src*="star"]:nth-of-type(2) {
+  top: 13%;
+}
+.columns.columns7 .columns div:last-child img[src*="star"]:nth-of-type(3) { left: 24%; bottom: 9%; }
+
+@media (width <= 900px) {
+  .columns.columns7 .columns div:last-child {
+    padding: 0 0 32px;
+  }
+}
+
+/* Responsive: stack columns on mobile */
+@media (width <= 900px) {
+  .columns.columns7 .columns {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .columns.columns7 .columns div {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .columns.columns7 .columns div:last-child {
+    align-items: center;
   }
 }
