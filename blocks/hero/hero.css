@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .hero-container .hero-wrapper {
   max-width: unset;
   padding: 0;
@@ -54,10 +55,9 @@
   border-radius: 30px 0 0 30px;
   position: relative;
   overflow: hidden;
-  min-height: 320px; /* adjust as needed */
+  min-height: 320px;
 }
 
-/* Left (image) section */
 .hero.hero1.block > div:first-child {
   flex: 1 1 50%;
   display: flex;
@@ -70,10 +70,9 @@
 .hero.hero1.block img {
   max-width: 90%;
   height: auto;
-  border-radius: 24px; /* optional if image needs rounding */
+  border-radius: 24px;
 }
 
-/* Right (content) section */
 .hero.hero1.block > div:last-child {
   flex: 1 1 50%;
   display: flex;
@@ -94,18 +93,16 @@
   max-width: 420px;
 }
 
-/* Headline */
 .hero.hero1.block h2 {
   color: #000;
-  font-size: 2rem; /* ~32px */
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  font-family: "Baloo 2", Quicksand, Arial, sans-serif; /* example */
+  font-family: "Baloo 2", Quicksand, Arial, sans-serif;
   margin-bottom: 18px;
   position: relative;
 }
 
-/* Button */
 .button-container {
   display: flex;
   justify-content: center;
@@ -131,7 +128,6 @@
   background: #d41f1f;
 }
 
-/* Decorative hearts (SVG) in bottom right */
 .hero.hero1.block::after {
   content: '';
   position: absolute;
@@ -145,7 +141,6 @@
   pointer-events: none;
 }
 
-/* Responsive: stack on mobile */
 @media (width <= 700px) {
   .hero.hero1.block {
     flex-direction: column;
@@ -162,5 +157,134 @@
     bottom: 10px;
     width: 48px;
     height: 48px;
+  }
+}
+
+
+.hero.hero12 {
+  background: #f80;
+  border-radius: 2em;
+  box-sizing: border-box;
+  padding: 3.5em 2em 3.5em 3em;
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  align-items: center;
+  position: relative;
+  min-height: 320px;
+  max-width: 1200px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.hero.hero12 div div h1 {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #111;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.01em;
+}
+
+.hero.hero12 div div h1::before,
+.hero.hero12 div div h1::after {
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: middle;
+  background: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.8"><path d="M10 2.5L10.7557 7.0678C10.8309 7.51525 11.1847 7.86912 11.6322 7.9443L16.2 8.7L11.6322 9.4557C11.1847 9.53088 10.8309 9.88475 10.7557 10.3322L10 14.9L9.2443 10.3322C9.16912 9.88475 8.81525 9.53088 8.3678 9.4557L3.8 8.7L8.3678 7.9443C8.81525 7.86912 9.16912 7.51525 9.2443 7.0678L10 2.5Z" fill="%23ffd700" stroke="%23fff" stroke-width="1"/></g></svg>') center/contain no-repeat;
+  content: "";
+}
+
+.hero.hero12 div div h1::before{
+  margin-right: 0.25em;
+}
+
+.hero.hero12 div div h1::after{
+  margin-left: 0.25em;
+}
+
+.hero.hero12 div div p:not(.button-container) {
+  font-size: 1.1em;
+  color: #111;
+  margin: 0 0 1.5em;
+  max-width: 38em;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.hero.hero12 div div .button-container {
+  margin-top: 0.5em;
+}
+
+.hero.hero12 a.button {
+  background: #b01609;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.08em;
+  padding: 0.7em 2.4em;
+  border-radius: 3em;
+  border: none;
+  box-shadow: none;
+  transition: background 0.2s;
+  margin: 0;
+}
+
+.hero.hero12 a.button:hover,
+.hero.hero12 a.button:focus {
+  background: #870f06;
+}
+
+/* Hearts Decoration */
+.hero.hero12 div div + div {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.hero.hero12 div div + div div {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 170px;
+  height: 140px;
+  background: none;
+  pointer-events: none;
+}
+
+.hero.hero12 div div + div div::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 170px;
+  height: 140px;
+  background: url('data:image/svg+xml;utf8,<svg width="170" height="140" viewBox="0 0 170 140" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M85 126C83.3333 126 44.5 102 28.5 74C14.5 49.5 36 27 58.5 34.5C73.5 39.5 85 54.5 85 54.5C85 54.5 96.5 39.5 111.5 34.5C134 27 155.5 49.5 141.5 74C125.5 102 86.6667 126 85 126Z" stroke="white" stroke-width="3" fill="none"/><path d="M140 68C138.922 68 121.912 57.1429 116.6 46.8571C112.046 38.1429 120.868 30 128.841 32.5714C134.299 34.3571 140 41.1429 140 41.1429C140 41.1429 145.701 34.3571 151.159 32.5714C159.132 30 167.954 38.1429 163.4 46.8571C158.088 57.1429 141.078 68 140 68Z" stroke="white" stroke-width="2" fill="none"/><path d="M30 68C28.9221 68 11.9124 57.1429 6.60035 46.8571C2.0461 38.1429 10.8682 30 18.8412 32.5714C24.2994 34.3571 30 41.1429 30 41.1429C30 41.1429 35.7006 34.3571 41.1588 32.5714C49.1318 30 57.9539 38.1429 53.3996 46.8571C48.0876 57.1429 31.0779 68 30 68Z" stroke="white" stroke-width="2" fill="none"/></svg>') center/contain no-repeat;
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (width <= 900px) {
+  .hero.hero12 {
+    grid-template-columns: 1fr;
+    padding: 2.2em 1em;
+    min-height: 0;
+  }
+
+  .hero.hero12 div div + div {
+    height: 120px;
+    min-width: 0;
+    justify-content: center;
+  }
+
+  .hero.hero12 div div + div div,
+  .hero.hero12 div div + div div::after {
+    width: 95px;
+    height: 75px;
   }
 }
