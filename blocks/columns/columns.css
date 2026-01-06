@@ -33,8 +33,6 @@
   }
 }
 
-
-/* Responsive 2-column layout for .columns block */
 .columns .block.columns-2-cols {
   display: flex;
   flex-direction: row;
@@ -47,7 +45,6 @@
   margin-bottom: 0;
 }
 
-/* Stack columns vertically on small screens */
 @media (width <= 900px) {
   .columns .block.columns-2-cols {
     flex-direction: column;
@@ -56,12 +53,10 @@
   }
 }
 
-/* Left column: constrain width, center vertically, spacing */
 .columns .block.columns-2-cols div {
   box-sizing: border-box;
 }
 
-/* Target left column for text containment and vertical centering */
 .columns .block.columns-2-cols div:first-child {
   max-width: 480px;
   width: 100%;
@@ -81,7 +76,6 @@
   }
 }
 
-/* Left column text spacing and simple divider between items */
 .columns .block.columns-2-cols div:first-child p {
   color: var(--dark-color);
   font-size: var(--body-font-size-m);
@@ -97,7 +91,6 @@
   margin-bottom: 0;
 }
 
-/* Headings in left column */
 .columns .block.columns-2-cols div:first-child h1,
 .columns .block.columns-2-cols div:first-child h2,
 .columns .block.columns-2-cols div:first-child h3 {
@@ -108,7 +101,6 @@
   line-height: 1.18;
 }
 
-/* Action buttons in left column: more specific to override defaults */
 .columns .block.columns-2-cols div:first-child a.button,
 .columns .block.columns-2-cols div:first-child .button {
   background-color: #e5d9fa;
@@ -136,7 +128,6 @@
   cursor: pointer;
 }
 
-/* Right column: image + overlay, center content vertically */
 .columns .block.columns-2-cols div:last-child {
   position: relative;
   display: flex;
@@ -150,7 +141,6 @@
     radial-gradient(ellipse 61% 47% at 54% 57%, #e5d9fa 88%, transparent 100%);
 }
 
-/* Responsive right column padding for mobile */
 @media (width <= 900px) {
   .columns .block.columns-2-cols div:last-child {
     min-height: 0;
@@ -158,9 +148,6 @@
   }
 }
 
-/* Decorative soft purple blob behind image via background gradient */
-
-/* Main product image: above blob, rounded, shadow */
 .columns .block.columns-2-cols div:last-child img {
   position: relative;
   z-index: 2;
@@ -173,14 +160,12 @@
   box-shadow: 0 6px 36px rgb(100 64 256 / 12%);
 }
 
-/* Responsive image sizing */
 @media (width <= 900px) {
   .columns .block.columns-2-cols div:last-child img {
     max-width: 180px;
   }
 }
 
-/* Play icon: small overlay, lower-right corner of image (adjacent img) */
 .columns .block.columns-2-cols div:last-child img + img,
 .columns .block.columns-2-cols div:last-child picture + img {
   position: absolute;
@@ -196,7 +181,6 @@
   transition: box-shadow 0.2s;
 }
 
-/* Responsive play icon sizing */
 @media (width <= 900px) {
   .columns .block.columns-2-cols div:last-child img + img,
   .columns .block.columns-2-cols div:last-child picture + img {
@@ -207,7 +191,6 @@
   }
 }
 
-/* Any text below image in right column, e.g. bold label/CTA */
 .columns .block.columns-2-cols div:last-child p:not(:has(img)) {
   margin-top: 22px;
   font-size: var(--heading-font-size-l);
@@ -225,4 +208,229 @@
   }
 }
 
-/* Remove excess space below columns block */
+
+/* Orange block visual and layout refinement for .columns.columns3 */
+
+/* Outer wrapper for orange block */
+.columns.columns3 {
+  background: #FF9100;
+  border-bottom-right-radius: 48px;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Two-column layout for the main block content */
+.columns.columns3 .block.columns-2-cols {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  width: 100%;
+  padding: 4rem 0 3rem;
+  margin-bottom: 0;
+}
+
+@media (width <= 900px) {
+  .columns.columns3 .block.columns-2-cols {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2.5rem;
+    padding: 2.2rem 0 1.5rem;
+  }
+}
+
+/* Text column */
+.columns.columns3 .block.columns-2-cols .columns-text,
+.columns.columns3 .block.columns-2-cols div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  min-width: 0;
+  flex: 1 1 0;
+  gap: 1.25rem;
+}
+
+@media (width <= 900px) {
+  .columns.columns3 .block.columns-2-cols .columns-text,
+  .columns.columns3 .block.columns-2-cols div:first-child {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+}
+
+.columns.columns3 .block.columns-2-cols .columns-text h1,
+.columns.columns3 .block.columns-2-cols .columns-text h2,
+.columns.columns3 .block.columns-2-cols .columns-text h3,
+.columns.columns3 .block.columns-2-cols .columns-text h4,
+.columns.columns3 .block.columns-2-cols div:first-child h1,
+.columns.columns3 .block.columns-2-cols div:first-child h2,
+.columns.columns3 .block.columns-2-cols div:first-child h3,
+.columns.columns3 .block.columns-2-cols div:first-child h4 {
+  color: #000;
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  line-height: 1.15;
+}
+
+.columns.columns3 .block.columns-2-cols .columns-text p,
+.columns.columns3 .block.columns-2-cols div:first-child p {
+  color: #000;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  line-height: 1.6;
+  border: none;
+  padding: 0;
+}
+
+/* Image/deco column */
+.columns.columns3 .block.columns-2-cols .columns-img,
+.columns.columns3 .block.columns-2-cols div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 3rem;
+  padding-left: 1rem;
+  flex: 1 1 0;
+  min-width: 0;
+  position: relative;
+}
+
+@media (width <= 900px) {
+  .columns.columns3 .block.columns-2-cols .columns-img,
+  .columns.columns3 .block.columns-2-cols div:last-child {
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+  }
+}
+
+/* Main image wrapper (usually a picture or div) */
+.columns.columns3 .block.columns-2-cols .columns-img picture,
+.columns.columns3 .block.columns-2-cols div:last-child picture {
+  display: block;
+  position: relative;
+  width: 340px;
+  height: 340px;
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+@media (width <= 900px) {
+  .columns.columns3 .block.columns-2-cols .columns-img picture,
+  .columns.columns3 .block.columns-2-cols div:last-child picture {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+/* Main image styling */
+.columns.columns3 .block.columns-2-cols .columns-img picture img,
+.columns.columns3 .block.columns-2-cols div:last-child picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 8px solid #fff;
+  box-sizing: border-box;
+  background: #FFD600;
+  z-index: 2;
+  position: relative;
+}
+
+/* Burst effect behind image (use .burst or similar class on a markup element) */
+.columns.columns3 .block.columns-2-cols .columns-img picture .burst,
+.columns.columns3 .block.columns-2-cols div:last-child picture .burst {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 120%;
+  height: 120%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Play button overlay (use .play-btn or similar class on a markup element) */
+.columns.columns3 .block.columns-2-cols .columns-img picture .play-btn,
+.columns.columns3 .block.columns-2-cols div:last-child picture .play-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 12%);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Decorative hearts overlay (use .hearts or similar class on a markup element) */
+.columns.columns3 .block.columns-2-cols .columns-img picture .hearts,
+.columns.columns3 .block.columns-2-cols div:last-child picture .hearts {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 38px;
+  height: 38px;
+  opacity: 0.8;
+  z-index: 4;
+}
+
+/* Decorative wavy white border at bottom */
+.columns.columns3::after {
+  display: block;
+  width: 100%;
+  height: 44px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+  background: url('data:image/svg+xml;utf8,<svg width="800" height="44" viewBox="0 0 800 44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 44V22C26.667 15 80.001 1 133.334 1C186.667 1 240.001 15 293.334 22C346.667 29 400.001 15 453.334 8C506.667 1 560.001 1 613.334 8C666.667 15 720.001 29 773.334 36C792.223 38.484 800 44 800 44H0Z" fill="white"/></svg>') repeat-x bottom;
+  content: "";
+}
+
+/* Responsive adjustments for stacking columns and image sizing */
+@media (width <= 900px) {
+  .columns.columns3 .block.columns-2-cols .columns-img picture,
+  .columns.columns3 .block.columns-2-cols div:last-child picture {
+    width: 220px;
+    height: 220px;
+  }
+
+  .columns.columns3 .block.columns-2-cols {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 2rem 0 1.5rem;
+  }
+
+  .columns.columns3 .block.columns-2-cols .columns-img,
+  .columns.columns3 .block.columns-2-cols div:last-child {
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+  }
+
+  .columns.columns3 .block.columns-2-cols .columns-text,
+  .columns.columns3 .block.columns-2-cols div:first-child {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+}
+
+/* Remove extra bottom margin from block if present */
