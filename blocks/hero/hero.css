@@ -45,3 +45,122 @@
     padding: 40px 32px;
   }
 }
+
+.hero.hero1.block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #f80;
+  border-radius: 30px 0 0 30px;
+  position: relative;
+  overflow: hidden;
+  min-height: 320px; /* adjust as needed */
+}
+
+/* Left (image) section */
+.hero.hero1.block > div:first-child {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+}
+
+.hero.hero1.block picture, 
+.hero.hero1.block img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 24px; /* optional if image needs rounding */
+}
+
+/* Right (content) section */
+.hero.hero1.block > div:last-child {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.hero.hero1.block > div:last-child > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Headline */
+.hero.hero1.block h2 {
+  color: #000;
+  font-size: 2rem; /* ~32px */
+  font-weight: bold;
+  text-align: center;
+  font-family: "Baloo 2", Quicksand, Arial, sans-serif; /* example */
+  margin-bottom: 18px;
+  position: relative;
+}
+
+/* Button */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.button {
+  background: #ad1515;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75em 2.5em;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 5%);
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background: #d41f1f;
+}
+
+/* Decorative hearts (SVG) in bottom right */
+.hero.hero1.block::after {
+  content: '';
+  position: absolute;
+  right: 30px;
+  bottom: 15px;
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+  background: url('data:image/svg+xml;utf8,<svg ...>') no-repeat center/contain;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+/* Responsive: stack on mobile */
+@media (width <= 700px) {
+  .hero.hero1.block {
+    flex-direction: column;
+    border-radius: 24px;
+  }
+
+  .hero.hero1.block > div {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero.hero1.block::after {
+    right: 10px;
+    bottom: 10px;
+    width: 48px;
+    height: 48px;
+  }
+}
